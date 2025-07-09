@@ -72,7 +72,7 @@ class Cookies(object):
         self._counter += 1
         return output_dir
 
-    def bake(self, extra_context=None, template=None):
+    def bake(self, extra_context=None, template=None, **extra_kwargs):
         exception = None
         exit_code = 0
         project_dir = None
@@ -99,6 +99,7 @@ class Cookies(object):
                 extra_context=extra_context,
                 output_dir=str(self._new_output_dir()),
                 config_file=str(self._config_file),
+                **extra_kwargs
             )
         except SystemExit as e:
             if e.code != 0:
