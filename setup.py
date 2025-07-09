@@ -13,7 +13,7 @@ def read(fname):
 
 setuptools.setup(
     name="pytest-cookies",
-    version="0.7.0",
+    version="0.8.0",
     author="Raphael Pierzina",
     author_email="raphael@hackebrot.de",
     maintainer="Raphael Pierzina",
