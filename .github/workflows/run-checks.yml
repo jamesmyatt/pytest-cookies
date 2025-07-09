@@ -15,21 +15,21 @@ jobs:
       fail-fast: false
       matrix:
         os: ["ubuntu-latest", "macos-latest", "windows-latest"]
-        environment: ["py37", "py38", "py39", "py310", "py311", "flake8"]
+        environment: ["py39", "py310", "py311", "py312", "py313", "flake8"]
 
         include:
-          - environment: "py37"
-            python: "3.7"
-          - environment: "py38"
-            python: "3.8"
           - environment: "py39"
             python: "3.9"
           - environment: "py310"
             python: "3.10"
           - environment: "py311"
             python: "3.11"
+          - environment: "py312"
+            python: "3.12"
+          - environment: "py313"
+            python: "3.13"
           - environment: "flake8"
-            python: "3.7"
+            python: "3.9"
 
     runs-on: ${{ matrix.os }}
 
