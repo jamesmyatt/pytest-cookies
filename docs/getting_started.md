@@ -31,8 +31,10 @@ def test_bake_project(cookies):
 It accepts the ``extra_context`` keyword argument that will be
 passed to cookiecutter. The given dictionary will override the default values
 of the template context, allowing you to test arbitrary user input data.
-
 Please see the [Injecting Extra Context] section of the
 official cookiecutter documentation.
+
+It also accepts extra keyword arguments,
+which are passed directly to the cookiecutter function.
 
   [Injecting Extra Context]: https://cookiecutter.readthedocs.io/en/latest/advanced/injecting_context.html#injecting-extra-context
